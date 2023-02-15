@@ -75,13 +75,20 @@
       </div>
     </header>
     <body>
-        <form action="">
-            <label for="name">Name:</label>
-            <input type="text" name="name" placeholder="Natalia Natalia">
-            <label for="email">Email:</label>
+        <form class="contactForm" action="">
+            <fieldset>
+                <legend>Name</legend> 
+                <input type="text" name="name" placeholder="Natalia Natalia">
+            </fieldset>
+           <fieldset>
+            <legend for="email">Email:</legend>
             <input type="email" name="email" placeholder="email@nana.com">
-            <label for="mensagge"><Menu:context>Mensagge:</Menu:context></label>
-            <input type="text" name="mensagge" >
+           </fieldset>            
+            <fieldset>
+                <legend for="mensagge">Mensagge:</legend>
+                <input type="text" name="mensagge" >
+            </fieldset>
+            <input type="submit" value="submit">
         </form>
     </body>
     <footer>
