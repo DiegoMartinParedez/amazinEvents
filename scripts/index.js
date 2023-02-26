@@ -1,4 +1,3 @@
-
 ////////////Array sin categorias repetidas////////
 let categories = [];
 x=''
@@ -20,55 +19,45 @@ for (let i = 0; i < data.events.length; i++) {
     x = obj.cate;  
 
     categories.push(obj);
-  
   }    
 }
-console.log(categories);
-
-
 // /////Crea checkbox por categorías///////////
+const contenedorCategories = document.querySelector("#checkCat");
 
-// const contenedorCategories = document.querySelector("#checkCat");
+let categorie = '';
 
-// let categorie = "";
+for (const cat of categories) {
+  categorie += `        <form action="#">
+    <input type="checkbox" name="${cat.cate}" id="${cat.cate}" />
+    <label for="${cat.cate}">${cat.cate}</label>
+  </form>`;
+}
 
-// for (const cat of categories) {
-//   categorie += `        <form action="#">
-//     <input type="checkbox" name="category" id="category" />
-//     <label for="category">${cat.cate}</label>
-//   </form>`;
-// }
+contenedorCategories.innerHTML = categorie;
+////////////Crear cards////////////////////////
+const contenedorCards = document.querySelector('#cards')
 
-// contenedorCategories.innerHTML = categorie;
+let cards = ''
 
-// //////////Creando cards////////////////////////
-// const contenedorCards = document.querySelector('#cards')
-
-// let cards = ''
-// for (let i = 0; i < categories2.length; i++) {
-//   let a = categories2[i].id;
-//  console.log(a);
-//  for (const card of data.events[a]) {
-//   cards += `        <div class="card">
-// <img src="./img/Cinema.jpg" class="card-img-top" alt="cinema" />
-// <div class="card-body">
-// <h5 class="card-title">${card.}</h5>
-// <p class="card-text">
-//   ${card.description}
-// </p>
-// <div id="fotterCard" class="container text-center">
-//   <div class="row">
-//     <div class="col-4">
-//       <h6>U$$ ${card.price}</h6>
-//     </div>
-//     <div class="col-8">
-//       <a href="./details.html" class="btn btn-primary">Ver más</a>
-//     </div>
-//   </div>
-// </div>
-// </div>
-// </div>`
-// }
-
-// }
-// contenedorCards.innerHTML = cards
+ for (const card of categories) {
+  cards += `        <div class="card">
+<img src="${card.img}" class="card-img-top" alt="${card.name}" />
+<div class="card-body">
+<h5 class="card-title">${card.name}</h5>
+<p class="card-text">
+  ${card.description}
+</p>
+<div id="fotterCard" class="container text-center">
+  <div class="row">
+    <div class="col-4">
+      <h6>U$$ ${card.price}</h6>
+    </div>
+    <div class="col-8">
+      <a href="./details.html" class="btn btn-primary">Ver más</a>
+    </div>
+  </div>
+</div>
+</div>
+</div>`
+}
+contenedorCards.innerHTML = cards
