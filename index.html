@@ -87,16 +87,8 @@
     </header>
     <main>
       <div class="search">
-        <form action="#">
-          <input type="checkbox" name="category1" id="category1" />
-          <label for="category1">Category 1</label>
-          <input type="checkbox" name="category2" id="category2" />
-          <label for="category2">Category 2</label>
-          <input type="checkbox" name="category3" id="category3" />
-          <label for="category3">Category 3</label>
-          <input type="checkbox" name="category4" id="category4" />
-          <label for="category4">Category 4</label>
-        </form>
+        <div id="checkCat" class="d-flex flex-wrap gap-2 justify-content-center">
+        </div>
         <form action="#">
           <input type="text" placeholder="Search" />
           <button type="submit">
@@ -115,55 +107,7 @@
           </button>
         </form>
       </div>
-      <figure>
-        <div class="card">
-          <img src="./img/Cinema.jpg" class="card-img-top" alt="cinema" />
-          <div class="card-body">
-            <h5 class="card-title">Cinema</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="./details.html" class="btn btn-primary">Ver más</a>
-          </div>
-        </div>
-        <div class="card">
-          <img
-            src="./img/Costume_Party.jpg"
-            class="card-img-top"
-            alt="Coastume Party"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Costume Party</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="./details.html" class="btn btn-primary">Ver más</a>
-          </div>
-        </div>
-        <div class="card">
-          <img src="./img/Food_Fair.jpg" class="card-img-top" alt="Food Fair" />
-          <div class="card-body">
-            <h5 class="card-title">Food Fair</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="./details.html" class="btn btn-primary">Ver más</a>
-          </div>
-        </div>
-        <div class="card">
-          <img src="./img/Marathon.jpg" class="card-img-top" alt="Marathon" />
-          <div class="card-body">
-            <h5 class="card-title">Marathon</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="./details.html" class="btn btn-primary">Ver más</a>
-          </div>
-        </div>
+      <figure id="cards">
       </figure>
     </main>
     <footer>
@@ -216,5 +160,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="./scripts/data.js"></script>
+    <script src="./scripts/index.js"></script>
   </body>
 </html>

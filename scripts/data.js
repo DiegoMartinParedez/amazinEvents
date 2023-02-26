@@ -1,4 +1,4 @@
-var data = {
+const data = {
     "currentDate": "2022-01-01",
     "events": [
       {
@@ -171,33 +171,3 @@ var data = {
       }
     ]
   };
-////////////clasificando eventos por categoria
-for (let i = 0; i < data.events.length; i++) {
-  let cat = data.events[i].category;
-  console.log(cat);
-  if (cat=="Food Fair") {
-    let food
-    food++;
-  } else if (cat=="museum") {
-    let mus
-    mus++; 
-  }else if (cat=="Costume Party"){
-    let costume
-    costume++;
-  }else if (cat=="Music Concert"){
-    let music
-    music++;
-  }else if (cat=="Race"){
-    let race
-    race++;
-  }else if (cat=="Book Exchange"){
-    let book
-    book++;
-  }else if (cat=="Cinema"){
-    let cine
-    cine++;
-  }else{
-    let other
-    other++
-  }
-}
