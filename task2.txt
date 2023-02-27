@@ -13,8 +13,7 @@ En el home.html deben haber tantas tarjetas como eventos haya
  en el array de eventos.
 
 Podrán observar que PAST y UPCOMMING tienen 7 eventos cada
- uno, imprimir los templates 
-en el html.
+ uno, imprimir los templates en el html.
 
 Te recomendamos que cada pagina .html tenga su archivo .js 
 en una carpeta llamada scripts.
