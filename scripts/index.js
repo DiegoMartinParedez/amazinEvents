@@ -39,9 +39,9 @@ const contenedorCards = document.querySelector('#cards')
 
 let cards = ''
 
- for (const card of categories) {
-  cards += `        <div class="card">
-<img src="${card.img}" class="card-img-top" alt="${card.name}" />
+ for (const card of data.events) {
+  cards += `        <div class="card w-25" m-6 g-col-6>
+<img src="${card.image}" class="card-img-top" alt="${card.name}" />
 <div class="card-body">
 <h5 class="card-title">${card.name}</h5>
 <p class="card-text">
