@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Upcoming Events</title>
+    <title>Upcoming</title>
     <link rel="shortcut icon" href="./img/LogoAE.png" type="image/x-icon" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
@@ -16,32 +16,45 @@
   </head>
   <body>
     <header>
-      <div class="logo">
-        <img src="./img/LogoAE.png" alt="LogoAE" />
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="./index.html">Home</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active"  href="./upcoming.html">Upcoming Events</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./past.html">Past Events </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./contact.html">contact</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./stats.html">Stats</a>
-                  </li>
-                </ul>
-              </div>
+      <div class="principal">
+        <div class="logo">
+          <img src="./img/LogoAE.png" alt="LogoAE" />
+        </div>
+        <nav class="navbar navbar-expand-md">
+          <div class="container-fluid">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link  active" href="./upcoming.html">Upcoming Events</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./past.html">Past Events </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contact.html">contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./stats.html">Stats</a>
+                </li>
+              </ul>
             </div>
-          </nav>      </div>
+          </div>
+        </nav>
+      </div>
       <div class="nav2">
         <a href="./index.html"
           ><svg
@@ -54,7 +67,8 @@
           >
             <path
               d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm10.5 10V4a.5.5 0 0 0-.832-.374l-4.5 4a.5.5 0 0 0 0 .748l4.5 4A.5.5 0 0 0 10.5 12z"
-            /></svg>
+            />
+          </svg>
         </a>
         <div>
           <h1>Upcoming Events</h1>
@@ -70,88 +84,37 @@
           >
             <path
               d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.5 10a.5.5 0 0 0 .832.374l4.5-4a.5.5 0 0 0 0-.748l-4.5-4A.5.5 0 0 0 5.5 4v8z"
-            /></svg>
+            />
+          </svg>
         </a>
       </div>
     </header>
-    <body>
+    <main>
       <div class="search">
-        <form action="">
-          <input type="checkbox" name="category1" id="" />
-          <label for="category1">Category</label>
-          <input type="checkbox" name="category1" id="" />
-          <label for="category1">Category</label>
-          <input type="checkbox" name="category1" id="" />
-          <label for="category1">Category</label>
-          <input type="checkbox" name="category1" id="" />
-          <label for="category1">Category</label>
-        </form>
-        <form action="">
-            <input type="text" placeholder="Search" />
-            <button type="submit">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-search"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
-                />
-              </svg>
-            </button>  
+        <div
+          id="checkCat"
+          class="d-flex flex-wrap gap-2 justify-content-center"
+        ></div>
+        <form id="inputSearch" action="#">
+          <input type="text" placeholder="Search" />
+          <button type="submit">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-search"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+              />
+            </svg>
+          </button>
         </form>
       </div>
-      <section>
-        <div class="card">
-          <img src="./img/Museum_Tour.jpg" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Museum Tour</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="./details.html" class="btn btn-primary">Ver más</a>
-          </div>
-        </div>
-        <div class="card" >
-          <img src="./img/Costume_Party.jpg" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Costume Party</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="./details.html" class="btn btn-primary">Ver más</a>
-          </div>
-        </div>
-        <div class="card">
-          <img src="./img/Music_Concert.jpg" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Music Concert</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="./details.html" class="btn btn-primary">Ver más</a>
-          </div>
-        </div>
-        <div class="card">
-          <img src="./img/Marathon.jpg" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Marathon</h5>
-            <p class="card-text">
-
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="./details.html" class="btn btn-primary">Ver más</a>
-          </div>
-        </div>
-      </section>
-    </body>
+      <figure id="cards"></figure>
+    </main>
     <footer>
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -195,5 +158,7 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+    <script src="./scripts/data.js"></script>
+    <script src="./scripts/upcoming.js"></script>
   </body>
 </html>
